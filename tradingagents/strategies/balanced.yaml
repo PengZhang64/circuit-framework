@@ -1,0 +1,19 @@
+name: balanced
+description: >
+  Uses all analyst reports evenly. Suitable as the default Circuit profile for
+  crypto perpetual research without a strong directional style bias.
+analyst_weights:
+  market_structure: 1.0
+  derivatives: 1.0
+  sentiment: 1.0
+  catalyst: 1.0
+  regime: 1.0
+prompt_overlay: >
+  Balance market structure, derivatives, sentiment, catalysts and regime equally.
+  Prefer well-defined setups with clear invalidation. Choose NO_TRADE when
+  evidence is mixed or incomplete.
+preferred_time_horizon: 1h
+minimum_confidence: 0.55
+max_position_pct: 10.0
+max_leverage: 3.0
+risk_per_trade_pct: 1.0
