@@ -1,0 +1,18 @@
+name: mean_reversion
+description: >
+  Favors stretched prices, funding extremes and exhaustion signals for fades.
+analyst_weights:
+  market_structure: 1.2
+  derivatives: 1.3
+  sentiment: 1.0
+  catalyst: 0.6
+  regime: 0.9
+prompt_overlay: >
+  Look for stretched moves away from EMA and funding extremes that suggest
+  exhaustion. Fade only with clear mean-reversion confirmation and tight
+  invalidation. Avoid fighting strong regime-aligned trends.
+preferred_time_horizon: 1h
+minimum_confidence: 0.58
+max_position_pct: 8.0
+max_leverage: 2.5
+risk_per_trade_pct: 0.8

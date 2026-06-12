@@ -1,0 +1,18 @@
+name: narrative
+description: >
+  Favors confirmed catalysts and sentiment acceleration over pure price action.
+analyst_weights:
+  market_structure: 0.7
+  derivatives: 0.7
+  sentiment: 1.4
+  catalyst: 1.6
+  regime: 0.9
+prompt_overlay: >
+  Emphasize confirmed catalysts (listings, unlocks, governance, security,
+  regulation) and accelerating sentiment. Discount pure speculation. Require
+  structure alignment and choose NO_TRADE when narrative evidence is thin.
+preferred_time_horizon: 4h
+minimum_confidence: 0.60
+max_position_pct: 7.0
+max_leverage: 2.0
+risk_per_trade_pct: 0.8
